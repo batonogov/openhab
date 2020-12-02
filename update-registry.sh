@@ -9,6 +9,6 @@ registryserver=10.21.121.48
 registryport=32777
 host=$registryserver:$registryport
 
-docker pull openhab/$openhab
-docker tag openhab/$openhab $host/$openhab
+docker pull batonogov/openhab
+docker tag batonogov/openhab $host/$openhab
 docker push $host/$openhab
