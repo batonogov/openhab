@@ -6,8 +6,8 @@ services:
     container_name: openhab
     restart: always
     ports:
-      - "8080:8080"
-      - "8443:8443"
+      - "31775:8080"
+      - "31443:8443"
     volumes:
       - "./openhab/addons:/openhab/addons"
       - "./openhab/conf:/openhab/conf"
