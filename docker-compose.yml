@@ -2,12 +2,14 @@ version: '3.8'
 
 services:
   openhab:
-    image: batonogov/openhab
+    build: . # Сборка из dockerfile
+    # image: batonogov/openhab # Оригинальный образ + python
+    # image: openhab/openhab # Оригинальный образ
     container_name: openhab
     restart: always
     ports:
-      - "8080:8080"
-      - "8443:8443"
+      - "31775:8080"
+      - "31443:8443"
     volumes:
       - "./openhab/addons:/openhab/addons"
       - "./openhab/conf:/openhab/conf"
@@ -19,3 +21,5 @@ services:
       LC_ALL: ru_RU.UTF-8
       LANG: ru_RU.UTF-8
       LANGUAGE: ru_RU.UTF-8
+      # USER_ID: 1001
+      # GROUP_ID: 9001
