@@ -19,3 +19,5 @@ services:
       LC_ALL: ru_RU.UTF-8
       LANG: ru_RU.UTF-8
       LANGUAGE: ru_RU.UTF-8
+      # USER_ID: 1001
+      # GROUP_ID: 9001

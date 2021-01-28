@@ -1,4 +1,4 @@
-FROM openhab/openhab:2.5.11
+FROM openhab/openhab
 
 LABEL maintainer="batonogov@icloud.com"
 
@@ -7,7 +7,3 @@ RUN apt update && \
         python3 \
         python3-pip \
         -y
-
-RUN pip3 install \
-        paramiko \
-        requests

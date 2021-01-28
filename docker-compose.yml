@@ -2,9 +2,9 @@ version: '3.8'
 
 services:
   openhab:
-    build: . # Сборка из dockerfile
+    # build: . # Сборка из dockerfile
     # image: batonogov/openhab # Оригинальный образ + python
-    # image: openhab/openhab # Оригинальный образ
+    image: openhab/openhab # Оригинальный образ
     container_name: openhab
     restart: always
     ports:
